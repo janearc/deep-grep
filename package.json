@@ -26,6 +26,6 @@
   "bugs": {
     "url": "https://github.com/avriette/deep-grep/issues"
   },
-  "dependencies": { "mocha": "*", "chai": "*", "jagrep": "*" },
+  "dependencies": { "mocha": "*", "chai": "*", "jagrep": ">=0.2.0" },
   "homepage": "https://github.com/avriette/deep-grep"
 }

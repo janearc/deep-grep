@@ -1,7 +1,8 @@
 deep-grep
 =========
 
-Too many haystacks, not enough needles
+Too many haystacks, not enough needles &mdash; or, "when you have a grep,
+everything looks like a list."
 
 ```
 var needles = dg.deeply( [
