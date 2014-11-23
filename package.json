@@ -1,8 +1,11 @@
 {
   "name": "deep-grep",
   "version": "0.0.1",
-  "description": "Recurses throug nested lists finding things you want.",
+  "description": "Recurses through neted lists finding the things you want.",
   "main": "lib/dg.js",
+  "directories": {
+    "test": "test"
+  },
   "scripts": {
     "test": "mocha"
   },
@@ -12,13 +15,17 @@
   },
   "keywords": [
     "grep",
+    "recursive",
     "recursion",
-    "synchronous"
+    "synchronous",
+    "nested",
+    "map"
   ],
-  "author": "Jane Avriette <jane.avriette@gsa.gov> (http://deepthoughts.feminist.pw/)",
+  "author": "Jane Avriette <jane.avriette@gsa.gov> (http://github.com/avriette)",
   "license": "CC0-1.0",
   "bugs": {
     "url": "https://github.com/avriette/deep-grep/issues"
   },
+  "dependencies": { "mocha": "*", "chai": "*" },
   "homepage": "https://github.com/avriette/deep-grep"
 }
