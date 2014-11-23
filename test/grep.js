@@ -5,7 +5,7 @@ var assert   = require( 'assert' )
 	, simple_list = [ 'foo', 'unicorn', 'bar', 'baz' ]
 	, nested_list = [ 'foo', [ 'unicorn', 'bar', [ 'leprechaun' ] ], 'baz' ]
 	, simple_hash = { 'foo': 'bar', 'horselike': 'unicorn', 'baz': 'bletch', 'leprechaun': '2' }
-	, nested_hash = { 'foo': 'bar', 'mythical-creatures': { 'critters': [ 'unicorn', 'leprechaun' ] }
+	, nested_hash = { 'foo': 'bar', 'mythical-creatures': { 'critters': [ 'unicorn', 'leprechaun' ] } }
 
 	// XXX: add object w/ methods for greppage
 
