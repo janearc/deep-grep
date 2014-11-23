@@ -94,7 +94,7 @@ interface to finding things in those lists. In particular `jagrep` has `.in()`
 which is useful with this package. So you might say something like:
 
 ```
-if (jgrep.in( dg.deeply( deep_list, test_values ), 'some crucial test hing' )) {
+if (jgrep.in( dg.deeply( deep_list, test_values ), 'some crucial test thing' )) {
 	// Do something crucial
 }
 
