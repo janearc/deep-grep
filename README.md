@@ -85,6 +85,29 @@ var needles  = dg.deeply( arks['Noah'], function (t) { ... }, {
 	} );
 ```
 
+See also
+====
+
+You may find [jagrep](https://github.com/avriette/jagrep) useful if you do a
+lot of listish things and you want a more-functional, less-objectional
+interface to finding things in those lists. In particular `jagrep` has `.in()`
+which is useful with this package. So you might say something like:
+
+```
+if (jgrep.in( dg.deeply( deep_list, test_values ), 'some crucial test hing' )) {
+	// Do something crucial
+}
+
+// Or
+
+jgrep.all_in(
+	dg.deeply( deep_list, test_values ), subset_of_test_values
+).forEach( function (sub_test) {
+	// Do something with the subset values
+} );
+
+```
+
 Author
 ====
 
