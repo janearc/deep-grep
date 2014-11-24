@@ -41,7 +41,6 @@ it( 'nested list', function () {
 		if ( (t == 'unicorn') || (t == 'leprechaun') ) { return true }
 	} );
 
-	console.log( uni );
 	assert(uni.length == 2, 'two elements returned');
 
 	// XXX: This is kind of cheating. It looks like 'include' does not mean 'equal':
@@ -49,6 +48,8 @@ it( 'nested list', function () {
 	// so for now we just get a haystack and check for needles. Eventually this
 	// needs to be fixed.
 	//
+	uni.forEach( function (critter) {
+		chai.assert.include( [ 'unicorn', 'leprechaun' ], critter, 'correct list values returned' );
+	} );
 
-	chai.assert.include( mythical, uni, 'correct list values returned' );
 } );
