@@ -17,9 +17,9 @@ it( 'syntax', function () {
 
 it( 'simple list', function () {
 	assert( function () {
-		var uni = dg.deeply( simple_list, function (t) { if t == 'unicorn' return true } );
-		if uni.length != 1 return false;
-		if uni[0] != 'unicorn' return false;
+		var uni = dg.deeply( simple_list, function (t) { if (t == 'unicorn') return true } );
+		if (uni.length != 1) return false;
+		if (uni[0] != 'unicorn') return false;
 		return true;
 	}, 'returns requisite element' )
 } );
