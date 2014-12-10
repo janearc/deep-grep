@@ -1,6 +1,6 @@
 {
   "name": "deep-grep",
-  "version": "0.0.2",
+  "version": "0.3.0",
   "description": "Recurses through nested lists finding the things you want.",
   "main": "lib/dg.js",
   "directories": {
