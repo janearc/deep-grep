@@ -16,23 +16,29 @@ var needles = dg.deeply( [
 )
 ```
 
-Inspired by this, which I wrote for [Sendak](https://github.com/18F/Sendak):
-
-```
-  var jgrep    = require( 'jagrep' )
-    , fs       = require( 'fs' )
-    , cwd      = process.cwd()
-    , bindir   = cwd + '/bin'
-    , files = jgrep.sync( { 'function': function (f) { return is_dir(f) } },
-        fs.readdirSync( bindir ).map( function (bf) {
-          return fs.realpathSync(bindir + '/' + bf) 
-        }
-      ) ).map( function (ld) { return fs.readdirSync( ld ).map( function (f) { return ld + '/' + f } ) 
-    } );
-```
-
-Usage
+usage
 ====
+
+For simple grep:
+
+* `dg.sync()`
+  - `dg.sync( list, expression )` - evaluates `list`, returning a new list of every
+     element that matches `expression.test` (like `RegExp`).
+  - `dg.sync( list, func )` - same as above, only executes `func` for every element
+     of list, returning a new list.
+* `dg.async()`
+  - `dg.async( list, expression )` - same as with `sync()`, above, only
+     returns a promise to the list of matches.
+  - `dg.async( list, func, callback )` - same as `sync()`, above, except the
+     callback is called with a promise to the list of matches.
+* `dg.in()`
+  - `dg.in( list, 'value' )` - returns `true` or `false` depending upon
+     whether `list` contains `value`.
+* `dg.all_in()`
+  - `dg.all_in( list_a, list_b )` - returns a list of all values in `list_a`
+   that exist in `list_b`.
+
+For doing greppy things on nested structures:
 
 For simple lists (that is, lists with nested lists of arbitrary depth but no
 complex datatypes &mdash; like objects &mdash; and no hashes), `dg.deeply` is
@@ -85,30 +91,7 @@ var needles  = dg.deeply( arks['Noah'], function (t) { ... }, {
 	} );
 ```
 
-See also
-====
-
-You may find [jagrep](https://github.com/avriette/jagrep) useful if you do a
-lot of listish things and you want a more-functional, less-objectional
-interface to finding things in those lists. In particular `jagrep` has `.in()`
-which is useful with this package. So you might say something like:
-
-```
-if (jgrep.in( dg.deeply( deep_list, test_values ), 'some crucial test thing' )) {
-	// Do something crucial
-}
-
-// Or
-
-jgrep.all_in(
-	dg.deeply( deep_list, test_values ), subset_of_test_values
-).forEach( function (sub_test) {
-	// Do something with the subset values
-} );
-
-```
-
-Author
+author
 ====
 
 [@avriette](https://github.com/avriette), jane@cpan.org
