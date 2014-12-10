@@ -93,7 +93,7 @@ var needles  = dg.deeply( arks['Noah'], function (t) { ... }, {
 	//   default: false
 	//
 	'return-hash-tuples': true,
-	} );
+} );
 ```
 
 author
