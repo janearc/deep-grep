@@ -37,6 +37,11 @@ For simple grep:
 * `dg.all_in()`
   - `dg.all_in( list_a, list_b )` - returns a list of all values in `list_a`
    that exist in `list_b`.
+* `dg.unique()`
+  - `dg.unique( list )` - returns all unique values of `list`. Note: flattens.
+* `dg.flatten( )`
+  - `dg.flatten( nested_list )` - returns a list of all the lists contained in
+    `nested_list`, concatenated into a single scope.
 
 For doing greppy things on nested structures:
 
