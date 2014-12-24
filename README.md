@@ -6,7 +6,7 @@ everything looks like a list."
 
 ```
 var needles = dg.deeply( [
-	foo. [
+	foo, [
 		bar, baz, [
 			bletch, [
 				qip
