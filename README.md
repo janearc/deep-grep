@@ -99,4 +99,4 @@ var needles  = dg.deeply( arks['Noah'], function (t) { ... }, {
 author
 ====
 
-[@avriette](https://github.com/avriette), jane@cpan.org
+[@janearc](https://github.com/janearc), jane@cpan.org
