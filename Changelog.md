@@ -5,6 +5,8 @@
 * Add strictures
 * Add log4j logging
 * Properly implemented singleton
+* Add substantial edge case checking
+* Add add&apos;l unit tests
 
 0.2.x
 ====
