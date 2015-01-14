@@ -26,6 +26,6 @@
   "bugs": {
     "url": "https://github.com/janearc/deep-grep/issues"
   },
-  "dependencies": { "mocha": "*", "chai": "*", "q": "*", "singleton": "*" },
+  "dependencies": { "mocha": "*", "chai": "*", "q": "*", "singleton": "*", "log4js": "*" },
   "homepage": "https://github.com/janearc/deep-grep"
 }
