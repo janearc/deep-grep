@@ -3,6 +3,8 @@
 
 * Add support for hash tuple checks
 * Add strictures
+* Add log4j logging
+* Properly implemented singleton
 
 0.2.x
 ====
