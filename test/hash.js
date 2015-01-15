@@ -16,16 +16,30 @@ var user_records    = [
 ];
 
 it('find a username in a hash', function () {
-	var r = dg.deeply(
+	var users = dg.deeply(
+		// Records to search
+		//
 		user_records,
-		function (t) { if (t == 'tybalt') return true },
+
+		// Test
+		//
+		function (t) {
+			//console.log( t );
+			if (t == 'tybalt') {
+				return true;
+			}
+		},
+
+		// Parameters to deeply
+		//
 		{
 			'return-hash-tuples': true,
 			'check-keys': false,
 			'check-values': true
 		}
 	);
-	assert.equal( r, { 'user-name': 'tybalt' } )
+	console.log( users );
+	assert.equal( users, { 'user-name': 'tybalt' } )
 } );
 
 // jane@cpan.org // vim:tw=80:ts=2:noet
