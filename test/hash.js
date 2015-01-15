@@ -38,8 +38,7 @@ it('find a username in a hash', function () {
 			'check-values': true
 		}
 	);
-	console.log( users );
-	assert.equal( users, { 'user-name': 'tybalt' } )
+	assert.deepEqual( users, [ { 'user-name': 'tybalt' } ] )
 } );
 
 // jane@cpan.org // vim:tw=80:ts=2:noet
