@@ -31,7 +31,7 @@
     "mocha": "*",
     "chai": "*",
     "q": "*",
-    "xact-id-tiny": "*",
+    "xact-id-tiny": ">=0.0.2",
     "log4js": "*"
   },
   "homepage": "https://github.com/janearc/deep-grep"
