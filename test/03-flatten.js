@@ -1,5 +1,3 @@
-// TODO: add nested listish data
-//
 var sendak_data = [
   [ '/Users/jane/dev/sendak/bin/js/add-github-project.js',
     '/Users/jane/dev/sendak/bin/js/build-node.js',

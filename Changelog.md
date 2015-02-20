@@ -1,3 +1,10 @@
+0.4.x
+====
+
+* Added support for multi-session grep (allows for concurrency)
+* Cleaned up module.exports
+* Added token unit tests
+
 0.3.x
 ====
 
