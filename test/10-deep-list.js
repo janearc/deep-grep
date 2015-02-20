@@ -29,8 +29,6 @@ it( 'nested list', function () {
 
 	var pair = dg.deeply( nested_list(), test );
 
-	console.log( pair );
-
 	assert(pair.length == 2, 'two elements returned');
 
 } );
