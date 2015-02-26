@@ -4,6 +4,8 @@
 * Added support for multi-session grep (allows for concurrency)
 * Cleaned up module.exports
 * Added token unit tests
+* Deprecated `sync()` and `async()` methods
+* Added jsdoc
 
 0.3.x
 ====
