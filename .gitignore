@@ -28,4 +28,4 @@ node_modules
 .lock-wscript
 
 # jsdoc dir
-.out
+.out/**
