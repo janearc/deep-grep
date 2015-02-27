@@ -25,7 +25,7 @@ it( 'coalesce', function () {
 	var merged = {
 		foo: 'foo_value',
 		bar: 'bar_value',
-		baz: 'baz_value'
+		baz: 'baz_value',
 		qip: 'qip_value',
 		quux: 'quux_value'
 	}
