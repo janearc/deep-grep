@@ -4,7 +4,7 @@ deep-grep
 Too many haystacks, not enough needles &mdash; or, "when you have a grep,
 everything looks like a list."
 
-```
+```javascript
 var needles = dg.deeply( [
 	foo, [
 		bar, baz, [
@@ -19,18 +19,8 @@ var needles = dg.deeply( [
 usage
 ====
 
-For simple grep:
+For grep on simple, flat (non-nested) lists:
 
-* `dg.sync()`
-  - `dg.sync( list, expression )` - evaluates `list`, returning a new list of every
-     element that matches `expression.test` (like `RegExp`).
-  - `dg.sync( list, func )` - same as above, only executes `func` for every element
-     of list, returning a new list.
-* `dg.async()`
-  - `dg.async( list, expression )` - same as with `sync()`, above, only
-     returns a promise to the list of matches.
-  - `dg.async( list, func, callback )` - same as `sync()`, above, except the
-     callback is called with a promise to the list of matches.
 * `dg.in()`
   - `dg.in( list, 'value' )` - returns `true` or `false` depending upon
      whether `list` contains `value`.
@@ -43,13 +33,9 @@ For simple grep:
   - `dg.flatten( nested_list )` - returns a list of all the lists contained in
     `nested_list`, concatenated into a single scope.
 
-For doing greppy things on nested structures:
+For doing greppy things on nested lists:
 
-For simple lists (that is, lists with nested lists of arbitrary depth but no
-complex datatypes &mdash; like objects &mdash; and no hashes), `dg.deeply` is
-invoked simply:
-
-```
+```javascript
 var haystack = [
 	'zebra', 'lion', [
 		'tiger', 'unicorn', 'emperor penguin'
@@ -65,7 +51,7 @@ var needles  = dg.deeply( list, function (t) {
 
 For more complex data, options are available to you:
 
-```
+```javascript
 var needles  = dg.deeply( arks['Noah'], function (t) { ... }, {
 	// Any of these may be defined
 	//
@@ -95,6 +81,20 @@ var needles  = dg.deeply( arks['Noah'], function (t) { ... }, {
 	'return-hash-tuples': true,
 } );
 ```
+
+deprecated methods
+====
+
+* `dg.sync()`
+  - `dg.sync( list, expression )` - evaluates `list`, returning a new list of every
+     element that matches `expression.test` (like `RegExp`).
+  - `dg.sync( list, func )` - same as above, only executes `func` for every element
+     of list, returning a new list.
+* `dg.async()`
+  - `dg.async( list, expression )` - same as with `sync()`, above, only
+     returns a promise to the list of matches.
+  - `dg.async( list, func, callback )` - same as `sync()`, above, except the
+     callback is called with a promise to the list of matches.
 
 author
 ====
