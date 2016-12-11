@@ -1,6 +1,6 @@
 {
   "name": "deep-grep",
-  "version": "0.4.2",
+  "version": "0.4.3",
   "description": "Scours arbitrarily-nested objects finding the things you want.",
   "main": "lib/dg.js",
   "directories": {

@@ -6,6 +6,7 @@
 * Added token unit tests
 * Deprecated `sync()` and `async()` methods
 * Added jsdoc
+* Removed gender-specific language
 
 0.3.x
 ====
