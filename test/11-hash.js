@@ -41,4 +41,4 @@ it('find a username in a hash', function () {
 	assert.deepEqual( users, [ { 'user-name': 'tybalt' } ] )
 } );
 
-// jane@cpan.org // vim:tw=80:ts=2:noet
+// jane.arc@pobox.com // vim:tw=80:ts=2:noet

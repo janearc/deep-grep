@@ -99,4 +99,4 @@ deprecated methods
 author
 ====
 
-[@janearc](https://github.com/janearc), jane@cpan.org
+[@janearc](https://github.com/janearc), jane.arc@pobox.com
