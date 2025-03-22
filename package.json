@@ -28,11 +28,11 @@
     "url": "https://github.com/janearc/deep-grep/issues"
   },
   "dependencies": {
-    "mocha": "*",
     "chai": "*",
+    "log4js": "*",
+    "mocha": "*",
     "q": "*",
-    "xact-id-tiny": ">=0.0.6",
-    "log4js": "*"
+    "xact-id-tiny": "github:janearc/xact-id-tiny"
   },
   "homepage": "https://github.com/janearc/deep-grep"
 }
