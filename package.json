@@ -22,17 +22,17 @@
     "map",
     "filter"
   ],
-  "author": "Jane Arc <jane.arc@gsa.gov> (http://github.com/janearc)",
+  "author": "Jane Arc <jane.arc@pobox.com> (http://github.com/janearc)",
   "license": "CC0-1.0",
   "bugs": {
     "url": "https://github.com/janearc/deep-grep/issues"
   },
   "dependencies": {
-    "mocha": "*",
     "chai": "*",
+    "log4js": "*",
+    "mocha": "*",
     "q": "*",
-    "xact-id-tiny": ">=0.0.6",
-    "log4js": "*"
+    "xact-id-tiny": "github:janearc/xact-id-tiny"
   },
   "homepage": "https://github.com/janearc/deep-grep"
 }

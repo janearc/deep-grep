@@ -29,3 +29,5 @@ node_modules
 
 # jsdoc dir
 .out/**
+
+package-lock.json
